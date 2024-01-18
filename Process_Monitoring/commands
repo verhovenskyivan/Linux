@@ -1,0 +1,47 @@
+ps:
+  Display information about active processes.
+  Basic usage: ps aux or ps -ef
+
+top:
+  Provides a dynamic, real-time view of the running system.
+  Simply type top in the terminal.
+
+htop:
+  An interactive process viewer, an advanced alternative to top.
+  Install and run with sudo apt-get install htop (for Debian-based systems) or sudo yum install htop (for Red Hat-based systems).
+
+pgrep:
+  Looks through the currently running processes and lists the process IDs that match the selection criteria.
+  Example: pgrep firefox will return the process ID of the Firefox browser.
+
+pkill:
+  Sends signals to processes based on name.
+  Example: pkill firefox will send the default signal (SIGTERM) to terminate all processes named "firefox."
+
+kill:
+  Sends a signal to a process, allowing you to terminate or control the behavior of a process.
+  Example: kill -9 PID will forcefully kill the process with the specified PID.
+
+killall:
+  Kills processes by name.
+  Example: killall firefox will kill all processes with the name "firefox."
+
+lsof:
+  Lists open files associated with active processes.
+  Example: lsof -i will display a list of all open network connections.
+
+netstat:
+  Displays network-related information such as open ports and routing tables.
+  Example: netstat -tulpn shows listening ports and associated processes.
+
+iotop:
+  Monitors I/O usage by processes.
+  Install and run with sudo apt-get install iotop (for Debian-based systems) or sudo yum install iotop (for Red Hat-based systems).
+
+vmstat:
+  Provides information about virtual memory statistics.
+  Example: vmstat 1 will display updated statistics every second.
+
+sar:
+  Collects, reports, or saves system activity information.
+  Example: sar -u 1 5 shows CPU usage every second for 5 iterations.
