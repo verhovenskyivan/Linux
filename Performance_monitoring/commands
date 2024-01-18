@@ -1,0 +1,43 @@
+vmstat:
+  Displays information about system resource usage, including memory, CPU, and disk statistics.
+  Example: vmstat 1 displays real-time updates every second.
+
+sar:
+  Collects, reports, and saves system activity information, including CPU, memory, and disk usage.
+  Example: sar -u 1 5 displays CPU usage every second for 5 iterations.
+
+iostat:
+  Reports CPU statistics and input/output statistics for devices, partitions, and network filesystems.
+  Example: iostat -c -d -x 1 displays CPU and disk I/O statistics every second.
+
+top:
+  Provides a dynamic, real-time view of the running system, including process information, memory usage, and CPU usage.
+  Simply type top in the terminal.
+
+htop:
+  An interactive process viewer and system monitor. It provides a visual representation of system performance.
+  Install and run with sudo apt-get install htop (for Debian-based systems) or sudo yum install htop (for Red Hat-based systems).
+
+free:
+  Displays information about free and used memory on the system.
+  Example: free -m shows memory usage in megabytes.
+
+df:
+  Displays information about disk space usage on mounted file systems.
+  Example: df -h shows disk space usage in a human-readable format.
+
+iotop:
+  Monitors I/O usage by processes, providing a real-time view of disk I/O.
+  Install and run with sudo apt-get install iotop (for Debian-based systems) or sudo yum install iotop (for Red Hat-based systems).
+
+nload:
+  Monitors network traffic and bandwidth usage in real-time.
+  Install and run with sudo apt-get install nload (for Debian-based systems) or sudo yum install nload (for Red Hat-based systems).
+
+uptime:
+  Shows how long the system has been running, as well as load averages.
+  Simply type uptime in the terminal.
+
+mpstat:
+  Displays individual processor related statistics.
+  Example: mpstat -P ALL 1 shows per-processor statistics every second.
