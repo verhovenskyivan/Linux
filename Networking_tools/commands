@@ -1,0 +1,53 @@
+ping: 
+  Test the reachability of a host on an IP network.
+  ping <hostname or IP address>
+
+traceroute: 
+  Trace the route that packets take to reach a destination host.
+  traceroute <hostname or IP address>
+
+netstat: 
+  Display network connections, routing tables, interface statistics, masquerade connections, and more.
+  netstat -a | grep <port>
+
+nmap: 
+  Network mapper for network discovery and security auditing.
+  nmap <hostname or IP address>
+
+tcpdump: 
+  A packet analyzer that allows the user to display TCP, UDP, and other packets being transmitted or received over a network.
+  tcpdump -i <interface>
+
+ifconfig/ip: 
+  Display and configure network interfaces.
+  ifconfig
+  or
+  ip addr show
+
+dig/nslookup: 
+  Query DNS servers for information about host addresses, mail exchanges, name servers, and related information.
+  dig <domain>
+  or
+  nslookup <domain>
+
+curl/wget: 
+  Command-line tools for transferring data with URLs.
+  curl <URL>
+  or
+  wget <URL>
+
+ss: 
+  A replacement for netstat that provides more detailed information about network connections.
+  ss -tulwn
+
+iptables: 
+  Administration tool for IPv4 packet filtering and NAT.
+  iptables -L
+
+iproute2: 
+  A collection of utilities for controlling TCP/IP networking and traffic control.
+  ip route show
+
+ssh: 
+  Secure Shell for secure communication over a network.
+  ssh <username>@<hostname or IP address>
