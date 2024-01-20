@@ -1,0 +1,33 @@
+grep: 
+  Search for patterns within files.
+  grep <pattern> <file>
+awk: 
+  A versatile text processing tool for pattern scanning and processing.
+  awk '{print $1}' <file>
+sed: 
+  Stream editor for filtering and transforming text.
+  sed 's/search/replace/g' <file>
+cut: 
+  Remove sections from each line of a file.
+  cut -d' ' -f2 <file>
+tr: 
+  Translate or delete characters.
+  echo "Hello" | tr '[:lower:]' '[:upper:]'
+sort: 
+  Sort lines of text files.
+  sort <file>
+uniq: 
+  Report or omit repeated lines.
+  uniq <file>
+paste: 
+  Merge lines of files.
+  paste file1 file2
+join: 
+  Join lines of two files on a common field.
+  join file1 file2
+jq: 
+  A lightweight and flexible command-line JSON processor.
+  jq '.property' <json-file>
+column: 
+  Format input into a nicely aligned table.
+  column -t <file>
