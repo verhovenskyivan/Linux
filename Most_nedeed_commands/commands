@@ -1,0 +1,49 @@
+Package Management:
+  Install/update packages: apt/yum/dnf install <package>
+File and Directory Management:
+  List files: ls
+  Move/copy/remove files: mv/cp/rm
+  Text Manipulation:
+  Search text: grep <pattern> <file>
+  Filter/transform text: awk/sed
+Process Management:
+  View processes: ps
+  Top processes: top
+  Kill a process: kill <PID>
+Networking:
+  Display network interfaces: ifconfig/ip
+  Network statistics: netstat -a
+  Trace route: traceroute <hostname or IP>
+  Network discovery: nmap <hostname or IP>
+  Packet analyzer: tcpdump -i <interface>
+  Bandwidth monitoring: iftop
+  DNS query: dig/nslookup
+  Connection information: ss -tulwn
+  IP routing table: ip route show
+  Firewall configuration: iptables -L
+Performance Monitoring Tools:
+  Resource usage statistics: vmstat
+  Disk I/O statistics: iostat
+  Memory usage: free -m
+  Disk space usage: df -h
+  Network interface statistics: sar -n DEV 1 5
+  Monitoring and Visualization:
+Monitoring and Logging:
+  Tail logs: tail -f <file>
+  Grep in logs: grep <pattern> <file>
+  System journal: journalctl -u <unit>
+  Monitor system metrics: htop
+SSH:
+  Secure remote connection: ssh <user>@<hostname>
+  Copy files securely: scp <file> <user>@<hostname>:<destination>
+Version Control:
+  Git commands: git clone/pull/commit
+Containerization:
+  Docker commands: docker run/ps
+Orchestration:
+  Kubernetes commands: kubectl get/apply
+Automation:
+  Ansible playbook: ansible-playbook <playbook.yml>
+  Infrastructure as Code (IaC):
+  Terraform commands: terraform init/apply
+  Prometheus/Grafana: systemctl start prometheus
