@@ -1,0 +1,31 @@
+# Check Firewall Status
+sudo iptables -L -n -v --line-numbers
+
+# Enable Firewall
+sudo iptables -P INPUT ACCEPT
+sudo iptables -P FORWARD ACCEPT
+sudo iptables -P OUTPUT ACCEPT
+
+# Disable Firewall
+sudo iptables -P INPUT DROP
+sudo iptables -P FORWARD DROP
+sudo iptables -P OUTPUT DROP
+
+# Allow Incoming SSH and HTTP Traffic
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+
+# Deny Incoming SSH Traffic
+sudo iptables -D INPUT -p tcp --dport 22 -j ACCEPT
+
+# Allow Traffic from Specific IP Address
+sudo iptables -A INPUT -s 192.168.1.2 -j ACCEPT
+
+# Delete Rule by Line Number
+sudo iptables -D INPUT X
+
+# Reset Firewall Rules
+sudo iptables -F
+sudo iptables -P INPUT ACCEPT
+sudo iptables -P FORWARD ACCEPT
+sudo iptables -P OUTPUT ACCEPT
