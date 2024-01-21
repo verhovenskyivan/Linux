@@ -1,0 +1,24 @@
+# Check UFW Status
+sudo ufw status verbose
+
+# Enable UFW
+sudo ufw enable
+
+# Disable UFW
+sudo ufw disable
+
+# Allow Incoming Traffic on Specific Ports
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+
+# Deny Incoming Traffic on Specific Ports
+sudo ufw deny 22/tcp
+
+# Allow Traffic from Specific IP Address
+sudo ufw allow from 192.168.1.2
+
+# Delete Rule (Replace 'X' with the rule number)
+sudo ufw delete X
+
+# Reset UFW (Remove all rules)
+sudo ufw reset
