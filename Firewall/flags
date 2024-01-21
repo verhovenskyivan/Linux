@@ -1,0 +1,56 @@
+-A (Append):
+Appends a rule to the end of the specified chain.
+
+-D (Delete):
+Deletes a rule from the specified chain based on its specification.
+
+-I (Insert):
+Inserts a rule at the specified position in the chain.
+
+-L (List):
+Lists the rules in the specified chain.
+
+-F (Flush):
+Flushes all rules from the specified chain.
+
+-P (Policy):
+Sets the policy for the specified chain.
+
+-s (Source):
+Specifies the source IP address or network.
+
+-d (Destination):
+Specifies the destination IP address or network.
+
+-p (Protocol):
+Specifies the protocol of the rule (e.g., tcp, udp, icmp).
+
+--dport (Destination Port):
+Specifies the destination port.
+
+--sport (Source Port):
+Specifies the source port.
+
+-j (Jump):
+Specifies the target of the rule (e.g., ACCEPT, DROP, REJECT).
+
+-m (Match):
+Specifies an extended match module.
+
+-i (Input Interface):
+Specifies the input interface.
+
+-o (Output Interface):
+Specifies the output interface.
+
+-c (Packet and Byte Counters):
+Resets packet and byte counters for a rule.
+
+--line-numbers:
+Shows line numbers in the iptables -L output.
+
+-v (Verbose):
+Provides more detailed output.
+
+-n (Numeric):
+Displays numeric values instead of resolving IP addresses and port numbers.
