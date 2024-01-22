@@ -1,0 +1,36 @@
+# Проверка сетевых интерфейсов
+ifconfig
+
+# Или используйте ip addr
+ip addr
+
+# Проверка маршрутов
+route -n
+
+# Или используйте ip route show
+ip route show
+
+# Пинг до удаленного узла (замените <IP-адрес> на конкретный IP)
+ping <IP-адрес>
+
+# Например, пинг до Google DNS
+ping 8.8.8.8
+
+# Проверка DNS
+cat /etc/resolv.conf
+
+# Проверка файрвола (замените <файрвол-команда> на соответствующую команду)
+# Для iptables
+iptables -L
+
+# Или для firewalld
+firewall-cmd --list-all
+
+# Просмотр системных журналов
+dmesg
+
+# Или просмотр журнала syslog
+cat /var/log/syslog
+
+# Или просмотр журнала messages (в некоторых системах)
+cat /var/log/messages
