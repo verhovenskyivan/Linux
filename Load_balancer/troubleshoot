@@ -1,0 +1,39 @@
+# Check Backend Server Health
+curl -I http://backend-server-ip
+
+# Review Load Balancer Logs
+sudo tail -f /var/log/nginx/error.log
+
+# Check Load Balancer Configuration
+sudo nginx -t
+
+# Review Load Balancer Statistics
+sudo nginx -V
+
+# Verify DNS Resolution
+nslookup backend-server-domain
+
+# Firewall and Security Groups
+# Check for rules blocking traffic
+# Ensure necessary ports are open
+
+# Monitor Resource Utilization
+top
+
+# Test Load Balancer Algorithms
+# Try different algorithms (round-robin, least connections)
+
+# SSL/TLS Configuration (If Applicable)
+# Verify certificates and configuration
+
+# Consult Documentation and Community
+# Check load balancer documentation and forums
+
+# Test with a Single Backend Server
+# Temporarily configure to use one backend server
+
+# Packet Captures
+# Use Wireshark to inspect network traffic
+
+# Update Software and Dependencies
+# Ensure load balancer software is up to date
